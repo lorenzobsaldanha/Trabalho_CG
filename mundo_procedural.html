@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mundo Procedural</title>
+    </head>
+    <body>
+        <canvas id="canvas" width="450" height="450">
+            Se está lendo isso é porquê seu browser não suporta HTML5
+        </canvas>
+
+<div class="sidebar">
+            <div id="ui">
+                <div id="x" style="color: white;"></div>
+                <div id="y" style="color: lightgray;"></div>
+                <div id="z" style="color: gray;"></div>
+                <div id="angleX"></div>
+                <div id="angleY"></div>
+                <div id="angleZ"></div>
+                <div id="scaleX"></div>
+                <div id="scaleY"></div>
+                <div id="scaleZ"></div>
+                <label for="noise">Funcao de ruido:</label>
+                    <select id="noise" name="noise">
+                        <option value="simpleNoise">Simple Noise</option>
+                        <option value="randomNoise">Random Noise</option>
+                        <option value="perlinNoise">Perlin Noise</option>
+                    </select>
+            </div>
+</div>
+
+<style>
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+</style>
+
+        <script src="https://webgl2fundamentals.org/webgl/resources/webgl-utils.js"></script>
+        <script src="https://webgl2fundamentals.org/webgl/resources/webgl-lessons-ui.js"></script>
+        <script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+        <script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
+        <script src="mundo_procedural.js">
+
+        </script>
+        
+    </body>
+
+</html>
